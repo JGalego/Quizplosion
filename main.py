@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(
     format='[%(asctime)s] %(levelname)s %(message)s',
     datefmt='%H:%M:%S',
-	level=logging.INFO
+    level=logging.INFO
 )
 
 # Initialize CLI arguments
@@ -33,24 +33,24 @@ parser = ArgumentParser(
 )
 parser.add_argument('quiz')
 parser.add_argument(
-	'-p', '--path',
-	default="./",
-	help="path to the templates directory."
+    '-p', '--path',
+    default="./",
+    help="path to the templates directory."
 )
 parser.add_argument(
-	'-t', '--template',
-	default="quiz.html.j2",
-	help="template for generating the quiz."
+    '-t', '--template',
+    default="quiz.html.j2",
+    help="template for generating the quiz."
 )
 parser.add_argument(
-	'-o', '--output',
-	default="quiz.html",
-	help="output file containing the quiz."
+    '-o', '--output',
+    default="quiz.html",
+    help="output file containing the quiz."
 )
 parser.add_argument(
-	'-v', '--variables',
-	default={},
-	type=json.loads
+    '-v', '--variables',
+    default={},
+    type=json.loads
 )
 
 args = parser.parse_args()

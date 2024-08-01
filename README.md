@@ -2,6 +2,8 @@
 
 Turns [quizdown](https://github.com/bonartm/quizdown-js)-formatted markdown files into quizzes.
 
+> 💡 **Tip:** Try the [online editor](https://bonartm.github.io/quizdown-live-editor) if you never used quizdown
+
 ![](https://y.yarn.co/b57f4b7e-3308-49cd-ac7c-2053ba707883_text.gif)
 
 ### Instructions
