@@ -8,7 +8,9 @@
 primaryColor: {{ primary_color | default("steelblue") }}
 shuffleQuestions: {{ shuffle_questions | default(true) }}
 shuffleAnswers: {{ shuffle_answers | default(true) }}
-nQuestions: {{ n_questions | default(10) | int }}
+{% if n_questions is defined -%}
+nQuestions: {{ n_questions | int }}
+{% endif -%}
 ---
 
 {{ quiz }}
