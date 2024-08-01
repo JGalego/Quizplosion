@@ -1,0 +1,15 @@
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js"></script>
+    <script>quizdown.init();</script>
+</head>
+
+<div class="quizdown">
+---
+primaryColor: {{ primary_color | default("steelblue") }}
+shuffleQuestions: {{ shuffle_questions | default(true) }}
+shuffleAnswers: {{ shuffle_answers | default(true) }}
+nQuestions: {{ n_questions | default(10) | int }}
+---
+
+{{ quiz }}
+</div>
